@@ -1,0 +1,286 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.body{
+  font-family: 'Space Grotesk', sans-serif;
+}
+.type_form{
+  width: 30%;
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  display: block;
+}
+.thankyou{
+  width: 30%;
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  display: none;
+  text-align: center;
+}
+.thankyouimg{
+  margin-bottom: 30px;
+}
+.buttonsub{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.buttoncontinue{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.imagebackground{
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+.imagefrontcard{
+  position: absolute;
+  width: 420px;
+  top: 15%;
+  left: 10%;
+  display: flex;
+  z-index: 1;
+}
+.imagebackcard{
+  position: absolute;
+  width: 420px;
+  top: 53%;
+  left: 15%;
+  display: flex;
+}
+
+.numberincard{
+  position: absolute;
+  top: 30%;
+  width: none;
+  left: 11.2% ;
+  z-index: 2;
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+}
+.nameoncard{
+  position: absolute;
+  top: 38%;
+  left: 11.5% ;
+  z-index: 2;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 4px;
+  display: flex;
+}
+.dateoncard{
+  position: absolute;
+  top: 38%;
+  width: none;
+  left: 450px;
+  z-index: 2;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 4px;
+  display: flex;
+}
+.numberoncvv{
+  position: absolute;
+  top: 65.5%;
+  left: 480px;
+  z-index: 2;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 4px;
+  display: flex;
+}
+.svvg{
+  position:absolute;
+  top: 18%;
+  left: 12%;
+  z-index: 2;
+}
+.submitButton{
+  background-color: hsl(278, 94%, 30%)!important;
+  border: none !important;
+}
+.continueButton{
+  background-color: hsl(278, 94%, 30%)!important;
+  border: none !important;
+}
+/* for accurate response */
+.frontnumberone{
+  width: 32%;
+}
+
+/* for mobile */
+.backgroundmobile{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 45%;
+}
+.smallcardfront{
+  display: none;
+  position: absolute;
+  top: 28%;
+  left: 22%;
+  width: 400px;
+  z-index: 1;
+}
+.smallcardback{
+  display: none;
+  position: absolute;
+  top: 9%;
+  left: 40%;
+  width: 400px;
+}
+
+#invalid-feedback1,
+#invalid-feedback2,
+#invalid-feedback3,
+#invalid-feedback4,
+#invalid-feedback5
+{
+  display: none;
+  color: red;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .imagebackground{
+    display: none;
+  }
+  .imagebackcard{
+    display: none;
+  }
+  .imagefrontcard{
+    display: none;
+  }
+  .type_form{
+    left: 30%;
+    width: 50%;
+    top: 65%;
+  }
+  .thankyou{
+    left: 30%;
+    width: 50%;
+    top: 65%;
+  }
+  .numberincard{
+    display: flex;
+    top: 45%;
+    font-size: 1.5em;
+    left: 26%;
+  }
+  .nameoncard{
+    display: flex;
+    top: 53%;
+    font-size: 0.7em;
+    left: 26%;
+  }
+  .dateoncard{
+    display: flex;
+    top: 53%;
+    font-size: 0.7em;
+    left: 53%;
+  }
+  .numberoncvv{
+    display: flex;
+    top: 23%;
+    font-size: 0.7em;
+    left: 650px;
+  }
+  .backgroundmobile{
+    display: flex;
+  }
+  .smallcardfront{
+    display: flex;
+  }
+  .smallcardback{
+    display: flex;
+  }
+  .svvg{
+    top: 32%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .imagebackground {
+    display: none;
+  }
+  .imagebackcard{
+    display: none;
+  }
+  .imagefrontcard{
+    display: none;
+  }
+  .type_form{
+    left: 10%;
+    width: 80%;
+    top: 60%
+  }
+  .thankyou{
+    left: 10%;
+    width: 80%;
+    top: 60%
+  }
+  .numberincard{
+    display: flex;
+    top: 42%;
+    font-size: 1.2em;
+    left: 20%;
+  }
+  .nameoncard{
+    display: flex;
+    top: 48%;
+    font-size: 0.7em;
+    left: 18%;
+  }
+  .dateoncard{
+    display: flex;
+    top: 48%;
+    font-size: 0.7em;
+    left: 320px;
+  }
+  .numberoncvv{
+    display: flex;
+    top: 23%;
+    font-size: 0.7em;
+    left: 400px;
+  }
+  .backgroundmobile{
+    display: flex;
+    height: 300px;
+  }
+  .smallcardfront{
+    display: flex;
+    width: 350px;
+    left: 10%;
+  }
+  .smallcardback{
+    display: flex;
+    width: 350px;
+    left: 25%;
+    top: 12%;
+  }
+  .svvg{
+    top: 32%;
+    left: 14%;
+  }
+}
